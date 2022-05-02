@@ -2,7 +2,7 @@
 #### Still in Progress
 No functionalities yet just plain ui
 
-<img src="components/assets/screen.png">
+<img src="components/assets/screen.png"/>
 
 
 ## Components
