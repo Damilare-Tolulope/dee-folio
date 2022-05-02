@@ -1,0 +1,57 @@
+.settings{
+    padding: 30px;
+}
+
+.settings h3{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.settings_body{
+    display: flex;
+    
+}
+.settings_content{
+    background-color: #ee8f4e;
+    width: 100%;
+    height: 550px;
+}
+.settings_tabs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 25px;
+    width: 300px;
+    height: 400px;
+}
+.s_tab{
+    height: 90px;
+    width: 90px;
+    box-shadow: 2px 2px 10px #0dd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: all 0.3s linear;
+}
+.settings_tabs .active{
+    border: 3px solid #ee8f4e;
+    color: #ee8f4e;
+}
+.s_tab:hover{
+    border: 3px solid #ee8f4e;
+    color: #ee8f4e;
+    transition: all 0.3s linear;
+}
+.s_tab i{
+    font-size: 20px;
+}
+.s_tab p{
+    color: #3f3d30;
+    margin-top: 10px;
+    font-weight: 500;
+    width: 50px;
+    text-align: center;
+}

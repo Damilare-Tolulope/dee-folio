@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* LOGIN========================== */
+.login{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login img, .login_form{
+    flex: 1;
+}
+.login img{
+    height: 300px;
+}
+.login_form{
+    padding: 0 50px;
+}
+.login_form h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+form{
+    width: 300px;
+}
+.form_input{
+    width: 300px;
+    border-bottom: 1px solid #ee8f4e;
+    padding: 10px 10px 0;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.form_input i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.form_input .togglePassword{
+    margin-right: 0;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.form_input input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline:none;
+    caret-color: #ee8f4e;
+}
+.remember{
+    margin:20px 10px;
+    font-size: 14px;
+}
+.remember input{
+    margin-right: 10px;
+    accent-color: #ee8f4e;
+    cursor: pointer;
+}
+input[type="submit"]{
+    width: 300px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ee8f4e;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+input[type="submit"]:hover{
+    box-shadow: 3px 3px 10px #ee8f4e;
+    transition: all 0.3s linear;
+}
+form > p{
+    font-size: 14px;
+    color: blue;
+    text-align: right;
+}
+.link_to_signup p{
+    font-size: 14px;
+    margin-top: 20px;
+    color: black;
+    text-align: center;
+}
+.link_to_signup p span{
+    color: blue;
+    cursor:pointer;
+} 
+
+
+
+
+
+
+
+
+/* SIGNUP========================== */
+.signup_form{
+    padding-left: 200px;
+}

@@ -1,0 +1,225 @@
+:root{
+    --mischka: #eae9eb;
+    --armadillo: #3f3d30;
+    --jaffa: #ee8f4e;
+    --puce: #d0859c;
+    --medium-carmine: #a44733;
+    --gold-sand: #e7b48e;
+    --lily: #c9b3bc;
+    --pewter: #9baf9f;
+    --pumice: #c1c8c3;
+}
+.container{
+    padding: 30px;
+    background-color: var(--mischka);
+}
+h3{
+    font-size: 14px;
+    color: var(--armadillo);
+}
+p{
+    color: var(--puce);
+    font-size: 12px;
+}
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.n-p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+}
+.n-p img, .n-p i{
+    cursor: pointer;
+}
+.n-p i{
+    padding: 10px 14px;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+.n-p i:hover{
+    background-color: #e7b48e;
+    transition: all 0.3s linear;
+    animation: hovering 2s 1;
+}
+@keyframes hovering{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(0.7);
+    }
+    75%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.top-nav img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border:none;
+    outline: none;
+    margin-left: 10px;
+}
+.search{
+    background-color: #fff;
+    padding: 4px 10px;
+    border:none;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+.search:hover{
+    transition: all 0.3s linear;
+    box-shadow: 2px 2px 12px #ee8f4e;
+}
+.search input{
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: 14px;
+    caret-color: #ee8f4e;
+}
+.search input::placeholder{
+    font-weight: bold;
+}
+.search i{
+    font-weight: lighter;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.category{
+    margin: 30px 0;
+}
+.category h1{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.cat-btns{
+    display: flex;
+    align-items: center;
+}
+.cat button{
+    padding: 10px;
+    border: 1px solid #d0859c;
+    border-radius: 8px;
+    outline: none;
+    width: 70px;
+    cursor:pointer;
+    font-size: 12px;
+    font-weight: bold;
+    color: #d0859c;
+    background-color: #fff; 
+    margin-right: 10px;
+}
+.cat-completed button{
+    border-radius:0 8px 8px 0;
+    border: 1px solid #ee8f4e;
+    border-left: 3px solid #ee8f4e;
+}
+.cat button i {
+    margin-right: 5px;
+}
+.body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:30px;
+    max-width: 950px;
+}
+
+.order{
+    background-color: #fff;
+    border:none;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+}
+.recepient{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-pic img{
+    height: 50px;
+    border-radius: 50%;
+}
+.profile-pic, .order-details img{
+    background-color: #d0859c;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border:none;
+    outline: none;
+}
+.order-details img{
+    height: 60px;
+    width: 60px;
+    margin-right: 20px ;
+}
+.order-details, .price, .order-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-details{
+    padding: 20px 0;
+    justify-content: left;
+}
+.order-details  div{
+    width: 100%;
+}
+.price{
+    margin-top: 5px;
+}
+hr{
+    border: px solid #d0859c;
+}
+.order-footer{
+    padding: 15px 0 10px;
+}
+.order-footer button{
+    padding: 10px;
+    border: 1px solid #d0859c;
+    border-radius: 8px;
+    outline: none;
+    width: 40px;
+    cursor:pointer;
+    font-size: 12px;
+    font-weight: bold;
+    color: #d0859c;
+    background-color: #fff; 
+    margin-right: 10px;
+}
+.c-r button{
+    width: auto;
+    padding:10px;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.c-r button i {
+    margin-right: 5px;
+}
+.c-r .rejected{
+    background-color:  red;
+    border-color:  red;
+    color: #fff;
+}
+.c-r .completed{
+    background-color: #00b22d;
+    border-color: #00b22d;
+    color: #fff;
+}
+.order-footer .reject{
+    border-color:  red;
+    color:  red;
+}
+.order-footer .complete{
+    border-color: #00b22d;
+    color: #00b22d;
+}

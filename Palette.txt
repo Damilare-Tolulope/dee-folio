@@ -1,0 +1,11 @@
+:root{
+--mischka: #eae9eb;
+--armadillo: #3f3d30;
+--jaffa: #ee8f4e;
+--puce: #d0859c;
+--medium-carmine: #a44733;
+--gold-sand: #e7b48e;
+--lily: #c9b3bc;
+--pewter: #9baf9f;
+--pumice: #c1c8c3;
+}
