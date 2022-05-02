@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTableCells, faClockRotateLeft, faHome, faArrowRightFromBracket, faSliders, faChartColumn, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import "./style.css"
+import logo from '../assets/logo.png'
 
 const Sidebar: React.FC = () => {
 
@@ -13,7 +14,9 @@ const Sidebar: React.FC = () => {
 
   return (
     <div className='sidebar'>
-      <div className='logo'>food</div>
+      <div className='logo'>
+        <img src={logo} alt='logo' />
+      </div>
       <div className='links'>
         <button onClick={() => scrollToView('home')}><i><FontAwesomeIcon icon={faHome} /></i> Home </button>
         <button onClick={() => scrollToView('history')}><i><FontAwesomeIcon icon={faClockRotateLeft} /></i>  Order History </button>
