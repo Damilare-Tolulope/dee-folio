@@ -66,3 +66,260 @@ nav{
     transition: all 0.3s linear;
 }
 
+
+
+.profile_sub{
+    width: 350px;
+    padding: 20px;
+    background: #FCFCFD;
+}
+.messages{
+    position: relative;
+    margin-right: 10px;
+}
+.messages .search_bar input::placeholder {
+    color: #1E2335;
+}
+.messages .search_bar input{
+    color: #1E2335;
+    caret-color: #1E2335;
+}
+
+.messages .search_bar {
+    margin: auto ;
+    margin-left: 60px;
+    position: relative;
+    border: 1px solid rgba(114, 129, 255, 0.31);
+    border-radius: 10px;
+}
+.message,
+.cont,
+.cont p{
+    display: flex;
+    align-items: center;
+}
+.cont{
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.cont p img,
+.receiver img,
+.message img{
+    margin-right: 10px;
+}
+.cont > img{
+    height: 20px;
+    cursor: pointer;
+}
+.message{
+    align-items: flex-start;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+.message:hover{
+    background-color: #EAF0FF;
+}
+.message div p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.message small{
+    position: absolute;
+    right: 10px;
+    font-size: 10px;
+}
+.active_msg{
+    background: #EAF0FF;
+}
+.messages_main {
+    position: relative;
+    width: 100%;
+}
+.messages_main hr{
+    margin-top: 0;
+}
+.messages_main .receiver img:nth-child(3){
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+
+.receiver{
+    padding-bottom: 12px;
+    justify-content: left;
+}
+.receiver img{
+    height: 45px;
+}
+.receiver button{
+    width: 70px;
+    padding: 3px;
+    margin-top: 5px;
+    color: #FCFCFD;
+    font-size: 12px;
+}
+
+/* =============MESSSAGEEE=========== */
+.imessage {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #e5e5ea;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    font-family: "SanFrancisco";
+    font-size: 14px;
+    margin: 0 auto 1rem;
+    max-height: 500px;
+    max-width: 800px;
+    padding: 15px 20px 80px;
+  }
+  .imessage p {
+      border-radius: 5px;
+      line-height: 1.25;
+    max-width: 55%;
+    padding: 0.5rem .875rem;
+    position: relative;
+    word-wrap: break-word;
+  }
+  .imessage p span{
+      display: block;
+      margin:5px 0 0;
+      text-align: left;
+  }
+  .from-me span{
+      color: #0f0f0f80;
+  }
+  .from-them span{
+      color: #ffffff80
+  }
+  
+  .imessage p::before,
+  .imessage p::after {
+    bottom: -0.1rem;
+    content: "";
+    height: 1rem;
+    position: absolute;
+  }
+  
+  p.from-me {
+    align-self: flex-end;
+    background-color: #e5e5ea;
+    color: #000;
+  }
+  
+  p.from-me::before {
+    border-bottom-left-radius: 0.8rem 0.7rem;
+    border-right: 1rem solid #e5e5ea;
+    right: -0.35rem;
+    transform: translate(0, -0.1rem);
+  }
+  
+  p.from-me::after {
+    background-color: #fff;
+    border-bottom-left-radius: 0.5rem;
+    right: -40px;
+    transform:translate(-30px, -2px);
+    width: 10px;
+  }
+  
+  p[class^="from-"] {
+    margin: 0.5rem 0;
+    width: fit-content;
+  }
+  
+  p.from-me ~ p.from-me {
+    margin: 0.25rem 0 0;
+  }
+  
+  p.from-me ~ p.from-me:not(:last-child) {
+    margin: 0.25rem 0 0;
+  }
+  
+  p.from-me ~ p.from-me:last-child {
+    margin-bottom: 0.5rem;
+  }
+  
+  p.from-them {
+    align-items: flex-start;
+    background-color: #248bf5;
+    color: #fff; 
+  }
+  
+  p.from-them:before {
+    border-bottom-right-radius: 0.8rem 0.7rem;
+    border-left: 1rem solid #248bf5;
+    left: -0.35rem;
+    transform: translate(0, -0.1rem);
+  }
+  
+  p.from-them::after {
+    background-color: #fff;
+    border-bottom-right-radius: 0.5rem;
+    left: 20px;
+    transform: translate(-30px, -2px);
+    width: 10px;
+  }
+  
+  p[class^="from-"].emoji {
+    background: none;
+    font-size: 2.5rem;
+  }
+  
+  p[class^="from-"].emoji::before {
+    content: none;
+  }
+  
+  .no-tail::before {
+    display: none;
+  }
+  
+  .margin-b_none {
+    margin-bottom: 0 !important;
+  }
+  
+  .margin-b_one {
+    margin-bottom: 1rem !important;
+  }
+  
+  .margin-t_one {
+    margin-top: 1rem !important;
+  }
+.imessage span{
+    font-size: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+.send_message div{
+    display: flex;
+    align-items: center;
+    background-color: #EAF0FF;
+    border-radius: 20px;
+    margin: 0 10px;
+    padding: 0 10px;
+    border: 1px solid rgba(157, 165, 178, 0.17);
+}
+.send_message div input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #EAF0FF;
+}
+.send_message img{
+    background-color: #EAF0FF;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.send_message{
+    display: flex;
+    align-items: center;
+    margin: 30px auto 10px;
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+    left:10%;
+}

@@ -14,7 +14,7 @@
 .links {
   margin-top: -10px;
 }
-.links button,
+.links a,
 .logout button {
   display: flex;
   align-items: center;
@@ -32,12 +32,12 @@
   cursor: pointer;
   transition: all 0.3s linear;
 }
-.links button:hover,
+.links a:hover,
 .logout button:hover {
   border: 2px solid #ee8f4e;
   color: #ee8f4e;
 }
-.links button i,
+.links a i,
 .logout button i {
   font-size: 19px;
   margin-right: 20px;

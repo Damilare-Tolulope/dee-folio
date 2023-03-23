@@ -1,31 +1,19 @@
 import React from 'react'
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch, faCancel, faCheck } from '@fortawesome/free-solid-svg-icons'
-import { faBell } from '@fortawesome/free-regular-svg-icons'
-import cacio from '../assets/Cacio.jpg'
-import putt from '../assets/Puttanesca.jpg'
-import pp from '../assets/pp.jpg'
-import pp2 from '../assets/pp (2).jpg'
-import pp3 from '../assets/pp (3).jpg'
-import pp4 from '../assets/pp (4).jpg'
-import pp5 from '../assets/pp (5).jpg'
+import { faCancel, faCheck } from '@fortawesome/free-solid-svg-icons'
+import cacio from 'assets/Cacio.jpg'
+import putt from 'assets/Puttanesca.jpg'
+import pp from 'assets/pp.jpg'
+import pp2 from 'assets/pp (2).jpg'
+import pp3 from 'assets/pp (3).jpg'
+import pp4 from 'assets/pp (4).jpg'
+import pp5 from 'assets/pp (5).jpg'
 
-const Home: React.FC = () => {
+const Index: React.FC = () => {
   return (
     <div id="home" className='container'>
-      <div className='top-nav'>
-        <div className='search'>
-          <i><FontAwesomeIcon icon={faSearch} /></i>
-          <input type="text" placeholder="Search" />
-        </div>
-        <div className='n-p'>
-          <i><FontAwesomeIcon icon={faBell} /></i>
-          <img src={pp} alt="" />
-        </div>
-      </div>
       <div className='category'>
-        <h1>Order History</h1>
         <div className='cat-btns'>
           <div className='cat'>
             <button><i>/</i> #345 </button>
@@ -259,4 +247,4 @@ const Home: React.FC = () => {
   )
 }
 
-export default Home
+export default Index

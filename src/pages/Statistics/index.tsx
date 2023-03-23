@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Statistics = () => {
+const index = () => {
   return (
     <div id='statistics'>Statistics</div>
   )
 }
 
-export default Statistics
+export default index

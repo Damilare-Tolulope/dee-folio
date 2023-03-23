@@ -1,10 +1,13 @@
 import { useState } from 'react'
-import pp from '../assets/pp.jpg'
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import SingleOrder from './components/SingleOrder';
 
-const Order = () => {
+import pp from 'assets/pp.jpg'
+
+
+const Index = () => {
 
   const orderData = [
     {
@@ -51,7 +54,13 @@ const Order = () => {
     },
   ]
 
-  const [data, setData] = useState(orderData)
+  const [data, setData] = useState(orderData);
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = (id: number) => {
+    // setShowModal(!showModal)
+    console.log(id, showModal);
+  }
 
   const deleteOrder = (id: number) => {
     const newData = data.filter(item => {
@@ -62,8 +71,12 @@ const Order = () => {
   }
 
   return (
-    <div id="history"  className='order-container'>
-      <h3 className='o-h'>Order History</h3>
+    <div id="history" onClick={() => setShowModal(false)}  className='order-container'>
+      <div className='delete_all'>
+        <button onClick={() => setData([])}>Delete All <FontAwesomeIcon icon={faTrash} /></button>
+      </div>
+
+      { showModal && <div id="modal"><SingleOrder /></div> }
       <div>
         <table>
           <thead>
@@ -80,7 +93,7 @@ const Order = () => {
             {
               data.map((items, index) => {
                 return (
-                  <tr>
+                  <tr key={index} onClick={() => toggleModal(items.id)}>
                     <td>{items.id}.</td>
                     <td><img src={pp} alt="" /> {items.customer}</td>
                     <td>{items.orderId}</td>
@@ -98,4 +111,4 @@ const Order = () => {
   )
 }
 
-export default Order
+export default Index

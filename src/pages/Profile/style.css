@@ -1,0 +1,61 @@
+.profile{
+    padding: 30px;
+}
+.profile h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 10px 0 30px;
+}
+.profile_details{
+    display: flex;
+    align-items: center;
+}
+.profile_details img{
+    height: 200px;
+    width: 200px;
+    margin-right: 50px;
+}
+.details_contact p{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.rating{
+    margin-top: 30px;
+}
+.rating span{
+    font-size: 15px;
+    margin-right: 5px;
+    color: yellow;
+}
+.badges{
+    margin-top: 20px;
+}
+.badges, .badge, .achievements{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.badge{
+    width: 250px;
+    height: 100px;
+    padding: 10px 15px;
+    background-color: rgb(71, 100, 100, 0.2);
+    border: none;
+    border-radius: 10px;
+}
+.badge i{
+    font-size: 40px;
+}
+.achievements{
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.achievements h4{
+    font-size: 22px;
+    text-transform: uppercase;
+}
+/* .total_orders{}
+.pie{} */
